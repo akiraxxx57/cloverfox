@@ -1,0 +1,406 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="CLOVERFOX Studios — Empresa indie de videojuegos. Desarrollamos experiencias cortas y únicas que emocionan. Descubre nuestro catálogo de juegos y programa de juego gratuito.">
+  <meta name="keywords" content="videojuegos indie, juegos cortos, desarrollo de videojuegos, CLOVERFOX Studios">
+  <meta name="author" content="CLOVERFOX Studios">
+
+  <meta property="og:title" content="CLOVERFOX Studios — Videojuegos Indie que Emocionan">
+  <meta property="og:description"
+    content="Desarrollamos videojuegos cortos y únicos. Descubre nuestro catálogo y programa de juego gratuito mensual.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://antigravitystudios.com">
+  <meta property="og:image" content="assets/og-image.jpg">
+
+  <title>CLOVERFOX Studios — Videojuegos Indie que Emocionan</title>
+
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="CLOVERFOX Studios - Inicio">
+        <div class="logo-icon" aria-hidden="true"><img src="Logo.png" width="56" height="56"></div>
+        <span>CLOVERFOX</span>
+      </a>
+
+      <button class="menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-main" role="navigation" aria-label="Navegación principal">
+        <a href="index.html" class="nav-link active">Inicio</a>
+        <a href="servicios.html" class="nav-link">Servicios</a>
+        <a href="sobre-nosotros.html" class="nav-link">Sobre la empresa</a>
+        <a href="tienda.html" class="nav-link">Tienda</a>
+        <a href="contacto.html" class="nav-link">Contacto</a>
+        <a href="#" class="nav-fav" data-open-fav aria-label="Ver juegos guardados">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path
+              d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" />
+          </svg>
+          <span class="fav-count" style="display: none;">0</span>
+        </a>
+        <a href="#" class="nav-cart" data-open-cart aria-label="Abrir carrito de compras">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="9" cy="21" r="1" />
+            <circle cx="20" cy="21" r="1" />
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+          </svg>
+          <span class="cart-count cart-badge" style="display: none;">0</span>
+        </a>
+        <div class="nav-login">
+          <a href="login.html" class="btn btn-outline btn-sm">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+              <circle cx="12" cy="7" r="4" />
+            </svg>
+            Iniciar sesión
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="hero-particles" aria-hidden="true">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot" aria-hidden="true"></span>
+          Nuevo: Programa de juego gratuito mensual
+        </div>
+
+        <h1 id="hero-title">
+          Desarrollamos videojuegos<br>
+          <span class="highlight">cortos y únicos</span><br>
+          que emocionan
+        </h1>
+
+        <p class="hero-subtitle">
+          Somos un estudio indie que crea experiencias breves pero inolvidables.
+          Completa un juego al 100% y recibe otro gratis cada mes.
+        </p>
+
+        <form class="hero-search" role="search" aria-label="Buscar juegos">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="11" cy="11" r="8" />
+            <path d="m21 21-4.3-4.3" />
+          </svg>
+          <input type="search" id="search-games" placeholder="Buscar por título, género o etiqueta..."
+            aria-label="Buscar juegos por título o etiqueta">
+          <button type="submit" class="btn btn-primary btn-sm">Buscar</button>
+        </form>
+
+        <div class="hero-actions">
+          <a href="tienda.html" class="btn btn-primary btn-lg">
+            🎮 Ver tienda
+          </a>
+          <a href="#programa" class="btn btn-secondary btn-lg">
+            🎁 Juegos gratis
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="destacados" aria-labelledby="destacados-title">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 id="destacados-title">🎮 Juegos Destacados</h2>
+          <p>Descubre nuestras últimas creaciones. Experiencias cortas, emociones intensas.</p>
+        </div>
+
+        <div class="games-grid">
+          <article class="game-card animate-on-scroll" id="game-ecos-del-abismo" data-id="game-001">
+            <div class="game-card-image">
+              <button class="btn-fav" data-product-id="game-001" data-product-name="Ecos del Abismo"
+                aria-label="Añadir a favoritos">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+              </button>
+              <div class="placeholder-img game-1" role="img" aria-label="Carátula de Ecos del Abismo"></div>
+              <span class="genre-tag rpg">RPG</span>
+            </div>
+            <div class="game-card-body">
+              <h3 class="game-card-title">Ecos del Abismo</h3>
+              <p class="game-card-desc">Un RPG de acción en 2D donde exploras las ruinas de una civilización olvidada.
+                Resuelve puzles, lucha contra criaturas arcanas y descifra los ecos del pasado.</p>
+              <div class="game-card-footer">
+                <span class="game-price">9,99 €</span>
+                <div class="game-actions">
+                  <button class="btn btn-primary btn-sm" data-add-to-cart data-product-id="game-001"
+                    data-product-name="Ecos del Abismo" data-product-price="9.99" data-original-text="Comprar"
+                    aria-label="Comprar Ecos del Abismo por 9,99 euros">
+                    Comprar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="game-card animate-on-scroll" id="game-latidos-niebla" data-id="game-002">
+            <div class="game-card-image">
+              <button class="btn-fav" data-product-id="game-002" data-product-name="Latidos en la Niebla"
+                aria-label="Añadir a favoritos">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+              </button>
+              <div class="placeholder-img game-2" role="img" aria-label="Carátula de Latidos en la Niebla"></div>
+              <span class="genre-tag terror">Terror</span>
+            </div>
+            <div class="game-card-body">
+              <h3 class="game-card-title">Latidos en la Niebla</h3>
+              <p class="game-card-desc">Un juego de terror psicológico y supervivencia. Atrapa tu linterna, contén la
+                respiración y adéntrate en un bosque donde la niebla cobra vida propia.</p>
+              <div class="game-card-footer">
+                <span class="game-price">7,49 €</span>
+                <div class="game-actions">
+                  <button class="btn btn-primary btn-sm" data-add-to-cart data-product-id="game-002"
+                    data-product-name="Latidos en la Niebla" data-product-price="7.49" data-original-text="Comprar"
+                    aria-label="Comprar Latidos en la Niebla por 7,49 euros">
+                    Comprar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <article class="game-card animate-on-scroll" id="game-reloj-arena" data-id="game-003">
+            <div class="game-card-image">
+              <button class="btn-fav" data-product-id="game-003" data-product-name="Reloj de Arena"
+                aria-label="Añadir a favoritos">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                </svg>
+              </button>
+              <div class="placeholder-img game-3" role="img" aria-label="Carátula de Reloj de Arena"></div>
+              <span class="genre-tag puzzle">Puzzle</span>
+            </div>
+            <div class="game-card-body">
+              <h3 class="game-card-title">Reloj de Arena</h3>
+              <p class="game-card-desc">Una aventura puzzle steampunk contra el tiempo. Manipula engranajes, invierte la
+                gravedad y descubre los secretos de una torre relojera ancestral.</p>
+              <div class="game-card-footer">
+                <span class="game-price">5,99 €</span>
+                <div class="game-actions">
+                  <button class="btn btn-primary btn-sm" data-add-to-cart data-product-id="game-003"
+                    data-product-name="Reloj de Arena" data-product-price="5.99" data-original-text="Comprar"
+                    aria-label="Comprar Reloj de Arena por 5,99 euros">
+                    Comprar
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section program-section" id="programa" aria-labelledby="programa-title">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 id="programa-title">🎁 Cómo funciona nuestro programa</h2>
+          <p>Completa un juego al 100% y consigue otro totalmente gratis. Así de simple, así de divertido.</p>
+        </div>
+
+        <div class="program-grid">
+          <div class="program-step animate-on-scroll">
+            <div class="step-number" aria-hidden="true">1</div>
+            <h3>Compra un juego</h3>
+            <p>Elige cualquier juego de nuestro catálogo y cómpralo a un precio justo. Todos nuestros juegos son
+              experiencias cortas y completas, ideales para sesiones intensas.</p>
+          </div>
+
+          <div class="program-step animate-on-scroll">
+            <div class="step-number" aria-hidden="true">2</div>
+            <h3>Complétalo al 100%</h3>
+            <p>Desbloquea todos los logros, completa cada nivel y descubre todos los secretos. Nuestro sistema de
+              telemetría verificará automáticamente tu progreso.</p>
+          </div>
+
+          <div class="program-step animate-on-scroll">
+            <div class="step-number" aria-hidden="true">3</div>
+            <h3>Recibe otro gratis</h3>
+            <p>Al completar un juego al 100%, recibirás un código para descargar otro título de nuestro catálogo
+              completamente gratis. ¡Cada mes hay nuevas sorpresas!</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="merch" aria-labelledby="merch-title">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <h2 id="merch-title">🛍️ Merchandising</h2>
+          <p>Lleva a CLOVERFOX contigo. Productos exclusivos para verdaderos fans.</p>
+        </div>
+
+        <div class="merch-grid">
+          <article class="merch-card animate-on-scroll">
+            <div class="merch-card-image">
+              <div class="placeholder-img merch-1" role="img" aria-label="Botellas de Agua de Acero"></div>
+            </div>
+            <div class="merch-card-body">
+              <h3 class="merch-card-title">Botellas de Agua de Acero (Estilo Militar)</h3>
+              <p class="merch-card-price">19,99 €</p>
+              <button class="btn btn-outline btn-sm" data-add-to-cart data-product-id="merch-001"
+                data-product-name="Botellas de Agua de Acero (Estilo Militar)" data-product-price="19.99"
+                data-original-text="Añadir al carrito" aria-label="Añadir botella de agua al carrito">
+                Añadir al carrito
+              </button>
+            </div>
+          </article>
+
+          <article class="merch-card animate-on-scroll">
+            <div class="merch-card-image">
+              <div class="placeholder-img merch-2" role="img" aria-label="Lámparas de Faro"></div>
+            </div>
+            <div class="merch-card-body">
+              <h3 class="merch-card-title">Lámparas de Faro (Latidos en la Niebla)</h3>
+              <p class="merch-card-price">34,99 €</p>
+              <button class="btn btn-outline btn-sm" data-add-to-cart data-product-id="merch-002"
+                data-product-name="Lámparas de Faro (Latidos en la Niebla)" data-product-price="34.99"
+                data-original-text="Añadir al carrito" aria-label="Añadir Lámpara de Faro al carrito">
+                Añadir al carrito
+              </button>
+            </div>
+          </article>
+
+          <article class="merch-card animate-on-scroll">
+            <div class="merch-card-image">
+              <div class="placeholder-img merch-3" role="img" aria-label="Parches Bordados"></div>
+            </div>
+            <div class="merch-card-body">
+              <h3 class="merch-card-title">Parches Bordados de Facciones</h3>
+              <p class="merch-card-price">9,99 €</p>
+              <button class="btn btn-outline btn-sm" data-add-to-cart data-product-id="merch-003"
+                data-product-name="Parches Bordados de Facciones" data-product-price="9.99"
+                data-original-text="Añadir al carrito" aria-label="Añadir Parches Bordados al carrito">
+                Añadir al carrito
+              </button>
+            </div>
+          </article>
+
+          <article class="merch-card animate-on-scroll">
+            <div class="merch-card-image">
+              <div class="placeholder-img merch-4" role="img" aria-label="Réplicas de Brújulas"></div>
+            </div>
+            <div class="merch-card-body">
+              <h3 class="merch-card-title">Réplicas de Brújulas Antiguas</h3>
+              <p class="merch-card-price">29,99 €</p>
+              <button class="btn btn-outline btn-sm" data-add-to-cart data-product-id="merch-004"
+                data-product-name="Réplicas de Brújulas Antiguas" data-product-price="29.99"
+                data-original-text="Añadir al carrito" aria-label="Añadir Brújula Antigua al carrito">
+                Añadir al carrito
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="cta-title">
+      <div class="container">
+        <div class="cta-banner animate-on-scroll">
+          <h2 id="cta-title">¿Listo para la aventura?</h2>
+          <p>Únete a nuestra comunidad de jugadores indies. Descubre nuevos mundos cada mes y consigue juegos gratis
+            completando retos.</p>
+          <div class="btn-group">
+            <a href="tienda.html" class="btn btn-primary btn-lg">🎮 Ver tienda</a>
+            <a href="#programa" class="btn btn-secondary btn-lg">🎁 Juegos gratis</a>
+            <a href="contacto.html" class="btn btn-outline btn-lg">📧 Suscríbete</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon" aria-hidden="true"><img src="Logo.png" width="56" height="56" alt=""></div>
+            <span>CLOVERFOX</span>
+          </a>
+          <p>Somos un estudio indie apasionado por crear experiencias de juego cortas, únicas y emocionantes. Cada juego
+            es una obra de arte interactiva.</p>
+          <div class="social-links" style="margin-top: var(--space-lg);">
+            <a href="#" class="social-link" aria-label="Twitter / X">𝕏</a>
+            <a href="#" class="social-link" aria-label="Discord">💬</a>
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Enlaces rápidos</h4>
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="servicios.html">Servicios</a></li>
+            <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Términos de uso</a></li>
+            <li><a href="#">Política de cookies</a></li>
+            <li><a href="#">Aviso legal</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Newsletter</h4>
+          <p style="color: var(--color-text-secondary); font-size: var(--fs-small); margin-bottom: var(--space-md);">
+            Recibe novedades, ofertas y códigos de juegos gratis directamente en tu bandeja.
+          </p>
+          <form class="newsletter-form" aria-label="Suscripción al newsletter">
+            <input type="email" placeholder="tu@email.com" required aria-label="Email para newsletter">
+            <button type="submit" class="btn btn-primary btn-sm">Enviar</button>
+          </form>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 CLOVERFOX Studios. Todos los derechos reservados.</p>
+        <p>Hecho con ❤️ por un equipo indie de 14 personas.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

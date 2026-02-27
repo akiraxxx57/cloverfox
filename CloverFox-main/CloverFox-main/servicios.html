@@ -1,0 +1,316 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Servicios profesionales de desarrollo de videojuegos: diseño, producción, DLCs, distribución y soporte. Presupuesto sin compromiso.">
+    <meta property="og:title" content="Servicios — CLOVERFOX Studios">
+    <meta property="og:description"
+        content="Desarrollo de videojuegos para PC, consolas y móviles. Producción de DLCs, distribución y soporte.">
+    <meta property="og:type" content="website">
+    <title>Servicios — CLOVERFOX Studios</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <a href="index.html" class="logo" aria-label="CLOVERFOX Studios - Inicio">
+                <div class="logo-icon" aria-hidden="true"><img src="Logo.png" width="56" height="56" alt=""></div>
+                <span>CLOVERFOX</span>
+            </a>
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-main" role="navigation" aria-label="Navegación principal">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="servicios.html" class="nav-link active">Servicios</a>
+                <a href="sobre-nosotros.html" class="nav-link">Sobre la empresa</a>
+                <a href="tienda.html" class="nav-link">Tienda</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+                <a href="#" class="nav-fav" data-open-fav aria-label="Ver juegos guardados">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg>
+                    <span class="fav-count" style="display: none;">0</span>
+                </a>
+                <a href="#" class="nav-cart" data-open-cart aria-label="Abrir carrito de compras">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="9" cy="21" r="1" />
+                        <circle cx="20" cy="21" r="1" />
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                    </svg>
+                    <span class="cart-count cart-badge" style="display: none;">0</span>
+                </a>
+                <div class="nav-login">
+                    <a href="login.html" class="btn btn-outline btn-sm">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>
+                        Iniciar sesión
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="services-hero section">
+            <div class="container">
+                <div class="hero-badge">
+                    <span class="dot" aria-hidden="true"></span>
+                    Soluciones profesionales para videojuegos
+                </div>
+                <h1
+                    style="font-family: var(--font-heading); font-size: var(--fs-h1); font-weight: var(--fw-extrabold); margin-bottom: var(--space-lg);">
+                    Nuestros <span class="highlight">Servicios</span>
+                </h1>
+                <p
+                    style="color: var(--color-text-secondary); font-size: 1.15rem; max-width: 600px; margin: 0 auto; line-height: var(--lh-relaxed);">
+                    Desde la idea inicial hasta la distribución final. Ofrecemos un servicio integral de desarrollo de
+                    videojuegos para estudios y creadores independientes.
+                </p>
+            </div>
+        </section>
+
+        <section class="section" aria-labelledby="servicios-list-title">
+            <div class="container">
+                <h2 id="servicios-list-title" class="sr-only">Listado de servicios</h2>
+                <div class="services-grid">
+
+                    <article class="service-card animate-on-scroll" id="servicio-desarrollo">
+                        <div class="service-icon" aria-hidden="true">🎮</div>
+                        <h3>Desarrollo de Videojuegos</h3>
+                        <p>Diseñamos y programamos videojuegos completos para PC, consolas (PlayStation, Xbox, Nintendo
+                            Switch) y dispositivos móviles (iOS, Android). Desde prototipos hasta versiones gold.</p>
+                        <ul class="service-benefits" aria-label="Beneficios del desarrollo de videojuegos">
+                            <li>Motores: Unity, Unreal Engine, Godot</li>
+                            <li>Diseño de niveles y mecánicas</li>
+                            <li>Arte 2D y 3D (estilo pixel-art y hand-drawn)</li>
+                            <li>Música y efectos de sonido originales</li>
+                            <li>Testing QA integrado en todo el proceso</li>
+                        </ul>
+                        <button class="btn btn-primary" data-modal-open="modal-presupuesto"
+                            aria-label="Solicitar presupuesto para desarrollo de videojuegos">
+                            Solicitar presupuesto
+                        </button>
+                    </article>
+
+                    <article class="service-card animate-on-scroll" id="servicio-dlc">
+                        <div class="service-icon" aria-hidden="true">📦</div>
+                        <h3>Producción de DLCs</h3>
+                        <p>Expandimos tus juegos existentes con contenido descargable de calidad: nuevas historias,
+                            personajes, niveles, modos de juego o packs cosméticos que mantengan enganchada a tu
+                            comunidad.</p>
+                        <ul class="service-benefits" aria-label="Beneficios de producción de DLCs">
+                            <li>Extensiones narrativas coherentes</li>
+                            <li>Nuevos personajes y habilidades</li>
+                            <li>Mapas y niveles adicionales</li>
+                            <li>Integración perfecta con el juego base</li>
+                            <li>Balance y testing dedicado</li>
+                        </ul>
+                        <button class="btn btn-primary" data-modal-open="modal-presupuesto"
+                            aria-label="Solicitar presupuesto para DLCs">
+                            Solicitar presupuesto
+                        </button>
+                    </article>
+
+                    <article class="service-card animate-on-scroll" id="servicio-distribucion">
+                        <div class="service-icon" aria-hidden="true">🌐</div>
+                        <h3>Venta y Distribución</h3>
+                        <p>Publicamos y distribuimos tus juegos en las principales plataformas digitales: Steam, Epic
+                            Games Store, GOG, App Store, Google Play y nuestra propia tienda online.</p>
+                        <ul class="service-benefits" aria-label="Beneficios de venta y distribución">
+                            <li>Publicación en Steam, Epic, GOG</li>
+                            <li>Presencia en App Store y Google Play</li>
+                            <li>Gestión de claves y códigos</li>
+                            <li>Estrategia de precios y lanzamiento</li>
+                            <li>Marketing digital y trailers</li>
+                        </ul>
+                        <button class="btn btn-primary" data-modal-open="modal-presupuesto"
+                            aria-label="Solicitar presupuesto para distribución">
+                            Solicitar presupuesto
+                        </button>
+                    </article>
+
+                    <article class="service-card animate-on-scroll" id="servicio-soporte">
+                        <div class="service-icon" aria-hidden="true">🔧</div>
+                        <h3>Soporte y Actualizaciones</h3>
+                        <p>Mantenemos tus juegos vivos con parches de seguridad, corrección de bugs, actualizaciones de
+                            contenido y soporte técnico al jugador. Planes mensuales o por proyecto.</p>
+                        <ul class="service-benefits" aria-label="Beneficios de soporte y actualizaciones">
+                            <li>Corrección de bugs y parches</li>
+                            <li>Actualizaciones de seguridad</li>
+                            <li>Atención al jugador 24/7</li>
+                            <li>Monitorización de servidores</li>
+                            <li>Análisis de métricas y telemetría</li>
+                        </ul>
+                        <button class="btn btn-primary" data-modal-open="modal-presupuesto"
+                            aria-label="Solicitar presupuesto para soporte">
+                            Solicitar presupuesto
+                        </button>
+                    </article>
+
+                    <article class="service-card animate-on-scroll" id="servicio-scm">
+                        <div class="service-icon" aria-hidden="true">🔀</div>
+                        <h3>Control de Versiones</h3>
+                        <p>Implementamos y gestionamos sistemas de control de versiones como Perforce Helix Core o
+                            Plastic SCM, optimizados para activos de gran tamaño (texturas, modelos 3D, builds).</p>
+                        <ul class="service-benefits" aria-label="Beneficios de control de versiones">
+                            <li>Perforce Helix Core / Plastic SCM</li>
+                            <li>Flujo de trabajo por ramas (branching)</li>
+                            <li>Gestión de activos binarios</li>
+                            <li>Integración con motores de juego</li>
+                            <li>Formación para tu equipo</li>
+                        </ul>
+                        <button class="btn btn-primary" data-modal-open="modal-presupuesto"
+                            aria-label="Solicitar presupuesto para control de versiones">
+                            Solicitar presupuesto
+                        </button>
+                    </article>
+
+                    <article class="service-card animate-on-scroll" id="servicio-telemetria">
+                        <div class="service-icon" aria-hidden="true">📊</div>
+                        <h3>Telemetría y Analítica</h3>
+                        <p>Integramos sistemas de telemetría para que midas el comportamiento de los jugadores: mapas de
+                            calor, embudos de retención, tiempos de sesión y eventos personalizados.</p>
+                        <ul class="service-benefits" aria-label="Beneficios de telemetría y analítica">
+                            <li>Dashboards en tiempo real</li>
+                            <li>Mapas de calor de gameplay</li>
+                            <li>Embudos de retención y churn</li>
+                            <li>Eventos personalizados</li>
+                            <li>Informes mensuales automatizados</li>
+                        </ul>
+                        <button class="btn btn-primary" data-modal-open="modal-presupuesto"
+                            aria-label="Solicitar presupuesto para telemetría">
+                            Solicitar presupuesto
+                        </button>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="cta-banner animate-on-scroll">
+                    <h2>¿Tienes un proyecto en mente?</h2>
+                    <p>Cuéntanos tu idea y te prepararemos un presupuesto personalizado sin compromiso. Nos encanta
+                        trabajar con otros creativos.</p>
+                    <div class="btn-group">
+                        <button class="btn btn-primary btn-lg" data-modal-open="modal-presupuesto">📋 Solicitar
+                            presupuesto</button>
+                        <a href="contacto.html" class="btn btn-outline btn-lg">📧 Contactar</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="modal-backdrop" id="modal-presupuesto" role="dialog" aria-modal="true"
+        aria-labelledby="modal-presupuesto-title">
+        <div class="modal">
+            <div class="modal-header">
+                <h2 id="modal-presupuesto-title">Solicitar Presupuesto</h2>
+                <button class="modal-close" aria-label="Cerrar">&times;</button>
+            </div>
+            <form data-ajax aria-label="Formulario de solicitud de presupuesto">
+                <div class="form-group">
+                    <label for="pres-nombre">Nombre / Empresa *</label>
+                    <input type="text" id="pres-nombre" class="form-control" placeholder="Tu nombre o el de tu estudio"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="pres-email">Email *</label>
+                    <input type="email" id="pres-email" class="form-control" placeholder="correo@ejemplo.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="pres-servicio">Servicio de interés</label>
+                    <select id="pres-servicio" class="form-control">
+                        <option value="">Selecciona un servicio...</option>
+                        <option value="desarrollo">Desarrollo de videojuegos</option>
+                        <option value="dlc">Producción de DLCs</option>
+                        <option value="distribucion">Venta y distribución</option>
+                        <option value="soporte">Soporte y actualizaciones</option>
+                        <option value="scm">Control de versiones</option>
+                        <option value="telemetria">Telemetría y analítica</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="pres-mensaje">Descripción del proyecto *</label>
+                    <textarea id="pres-mensaje" class="form-control" rows="4"
+                        placeholder="Cuéntanos más sobre tu proyecto o idea..." required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Enviar solicitud</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon" aria-hidden="true"><img src="Logo.png" width="56" height="56" alt="">
+                        </div>
+                        <span>CLOVERFOX</span>
+                    </a>
+                    <p>Somos un estudio indie apasionado por crear experiencias de juego cortas, únicas y emocionantes.
+                    </p>
+                    <div class="social-links" style="margin-top: var(--space-lg);">
+                        <a href="#" class="social-link" aria-label="Twitter / X">𝕏</a>
+                        <a href="#" class="social-link" aria-label="Discord">💬</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="YouTube">▶</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="tienda.html">Tienda</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Términos de uso</a></li>
+                        <li><a href="#">Política de cookies</a></li>
+                        <li><a href="#">Aviso legal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p
+                        style="color: var(--color-text-secondary); font-size: var(--fs-small); margin-bottom: var(--space-md);">
+                        Recibe novedades y ofertas directamente en tu bandeja.</p>
+                    <form class="newsletter-form" aria-label="Suscripción al newsletter">
+                        <input type="email" placeholder="tu@email.com" required aria-label="Email para newsletter">
+                        <button type="submit" class="btn btn-primary btn-sm">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 CLOVERFOX Studios. Todos los derechos reservados.</p>
+                <p>Hecho con ❤️ por un equipo indie de 6 personas.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

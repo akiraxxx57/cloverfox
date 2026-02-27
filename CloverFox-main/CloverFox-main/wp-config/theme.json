@@ -1,0 +1,239 @@
+{
+  "theme": {
+    "name": "Antigravity Studios",
+    "slug": "antigravity-studios",
+    "version": "1.0.0",
+    "description": "Tema corporativo para Antigravity Studios, empresa indie de videojuegos. Compatible con el editor de bloques de WordPress (Gutenberg).",
+    "author": "Antigravity Studios",
+    "author_uri": "https://antigravitystudios.com",
+    "text_domain": "antigravity",
+    "requires_wp": "6.0",
+    "requires_php": "8.0",
+    "tags": [
+      "block-editor",
+      "custom-colors",
+      "custom-logo",
+      "custom-menu",
+      "e-commerce",
+      "responsive-layout",
+      "translation-ready"
+    ]
+  },
+  "settings": {
+    "color": {
+      "palette": [
+        { "slug": "primary",          "color": "#FF6B2B", "name": "Naranja Primario" },
+        { "slug": "primary-light",    "color": "#FF914D", "name": "Naranja Claro" },
+        { "slug": "primary-dark",     "color": "#E55A1B", "name": "Naranja Oscuro" },
+        { "slug": "secondary",        "color": "#2ECC71", "name": "Verde Secundario" },
+        { "slug": "secondary-light",  "color": "#5DDFAA", "name": "Verde Claro" },
+        { "slug": "secondary-dark",   "color": "#27AE60", "name": "Verde Oscuro" },
+        { "slug": "accent",           "color": "#9B59B6", "name": "Púrpura Acento" },
+        { "slug": "bg-dark",          "color": "#0D0D12", "name": "Fondo Oscuro" },
+        { "slug": "bg-card",          "color": "#16161E", "name": "Fondo Tarjeta" },
+        { "slug": "bg-elevated",      "color": "#1E1E2A", "name": "Fondo Elevado" },
+        { "slug": "text-primary",     "color": "#F0F0F5", "name": "Texto Principal" },
+        { "slug": "text-secondary",   "color": "#A0A0B8", "name": "Texto Secundario" }
+      ],
+      "gradients": [
+        {
+          "slug": "primary-gradient",
+          "gradient": "linear-gradient(135deg, #FF6B2B, #FF914D)",
+          "name": "Gradiente Naranja"
+        },
+        {
+          "slug": "secondary-gradient",
+          "gradient": "linear-gradient(135deg, #2ECC71, #5DDFAA)",
+          "name": "Gradiente Verde"
+        },
+        {
+          "slug": "hero-gradient",
+          "gradient": "linear-gradient(135deg, #FF6B2B, #2ECC71)",
+          "name": "Gradiente Hero"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "'Outfit', sans-serif",
+          "slug": "heading",
+          "name": "Outfit (Encabezados)",
+          "googleFonts": "Outfit:wght@300;400;500;600;700;800"
+        },
+        {
+          "fontFamily": "'Inter', sans-serif",
+          "slug": "body",
+          "name": "Inter (Cuerpo)",
+          "googleFonts": "Inter:wght@300;400;500;600;700"
+        }
+      ],
+      "fontSizes": [
+        { "slug": "small",   "size": "0.875rem", "name": "Pequeño" },
+        { "slug": "medium",  "size": "1rem",     "name": "Normal" },
+        { "slug": "large",   "size": "1.25rem",  "name": "Grande" },
+        { "slug": "x-large", "size": "1.75rem",  "name": "Extra Grande" },
+        { "slug": "huge",    "size": "2.5rem",   "name": "Enorme" }
+      ]
+    },
+    "layout": {
+      "contentSize": "1280px",
+      "wideSize": "1440px"
+    },
+    "spacing": {
+      "units": ["px", "em", "rem", "%", "vw", "vh"]
+    }
+  },
+  "menus": {
+    "primary": {
+      "name": "Menú Principal",
+      "items": [
+        { "title": "Inicio",            "url": "/",                "type": "page" },
+        { "title": "Servicios",         "url": "/servicios/",      "type": "page" },
+        { "title": "Sobre la empresa",  "url": "/sobre-nosotros/", "type": "page" },
+        { "title": "Tienda",            "url": "/tienda/",         "type": "page" },
+        { "title": "Contacto",          "url": "/contacto/",       "type": "page" },
+        { "title": "Iniciar sesión",    "url": "/mi-cuenta/",      "type": "page" }
+      ]
+    },
+    "footer": {
+      "name": "Menú Footer",
+      "items": [
+        { "title": "Política de privacidad", "url": "/privacidad/", "type": "page" },
+        { "title": "Términos de uso",        "url": "/terminos/",   "type": "page" },
+        { "title": "Política de cookies",    "url": "/cookies/",    "type": "page" },
+        { "title": "Aviso legal",            "url": "/aviso-legal/","type": "page" }
+      ]
+    }
+  },
+  "pages": [
+    {
+      "title": "Inicio",
+      "slug": "inicio",
+      "template": "front-page",
+      "blocks": ["hero", "games-grid", "program-steps", "merch-grid", "cta-banner"]
+    },
+    {
+      "title": "Servicios",
+      "slug": "servicios",
+      "template": "page-servicios",
+      "blocks": ["services-hero", "services-grid", "cta-banner"]
+    },
+    {
+      "title": "Sobre la empresa",
+      "slug": "sobre-nosotros",
+      "template": "page-about",
+      "blocks": ["about-hero", "mission-values", "team-grid", "tech-grid"]
+    },
+    {
+      "title": "Tienda",
+      "slug": "tienda",
+      "template": "shop",
+      "woocommerce": true,
+      "blocks": ["shop-hero", "shop-filters", "products-grid"]
+    },
+    {
+      "title": "Contacto",
+      "slug": "contacto",
+      "template": "page-contact",
+      "blocks": ["contact-hero", "contact-form", "contact-info", "press-form"]
+    }
+  ],
+  "products": [
+    {
+      "name": "Ecos del Abismo",
+      "slug": "ecos-del-abismo",
+      "type": "simple",
+      "regular_price": "9.99",
+      "description": "RPG de acción en 2D donde exploras las ruinas de una civilización olvidada. Resuelve puzles, lucha contra criaturas arcanas y descifra los ecos del pasado. 4-6 horas de juego.",
+      "short_description": "RPG de acción en 2D. Explora, lucha, descifra.",
+      "categories": ["Videojuegos", "RPG"],
+      "tags": ["RPG", "Aventura", "Pixel Art", "Un jugador", "Indie"],
+      "images": ["ecos-del-abismo-cover.jpg", "ecos-screenshot-01.jpg", "ecos-screenshot-02.jpg"],
+      "attributes": {
+        "genero": "RPG",
+        "plataforma": "PC, Mac, Linux",
+        "duracion": "4-6 horas",
+        "idiomas": "Español, Inglés"
+      },
+      "virtual": true,
+      "downloadable": true
+    },
+    {
+      "name": "Latidos en la Niebla",
+      "slug": "latidos-en-la-niebla",
+      "type": "simple",
+      "regular_price": "7.49",
+      "description": "Terror psicológico y supervivencia en primera persona. Adéntrate en un bosque donde la niebla cobra vida propia. Gestiona tu linterna, tu cordura y descubre qué se oculta entre los árboles. 3-5 horas de juego.",
+      "short_description": "Terror psicológico y supervivencia en primera persona.",
+      "categories": ["Videojuegos", "Terror"],
+      "tags": ["Terror", "Supervivencia", "Primera persona", "Indie", "Atmosférico"],
+      "images": ["latidos-cover.jpg", "latidos-screenshot-01.jpg"],
+      "attributes": {
+        "genero": "Terror / Supervivencia",
+        "plataforma": "PC, Mac",
+        "duracion": "3-5 horas",
+        "idiomas": "Español, Inglés"
+      },
+      "virtual": true,
+      "downloadable": true
+    },
+    {
+      "name": "Reloj de Arena",
+      "slug": "reloj-de-arena",
+      "type": "simple",
+      "regular_price": "5.99",
+      "description": "Aventura puzzle steampunk contra el tiempo. Manipula engranajes, invierte la gravedad y descubre los secretos de una torre relojera ancestral. Arte dibujado a mano con estética dorada. 2-4 horas de juego.",
+      "short_description": "Aventura puzzle steampunk. Manipula engranajes y tiempo.",
+      "categories": ["Videojuegos", "Puzzle"],
+      "tags": ["Puzzle", "Aventura", "Steampunk", "Indie", "Hand-drawn"],
+      "images": ["reloj-cover.jpg", "reloj-screenshot-01.jpg"],
+      "attributes": {
+        "genero": "Puzzle / Aventura",
+        "plataforma": "PC, Mac, Linux, Nintendo Switch",
+        "duracion": "2-4 horas",
+        "idiomas": "Español, Inglés, Francés"
+      },
+      "virtual": true,
+      "downloadable": true
+    }
+  ],
+  "merch": [
+    {
+      "name": "Camiseta «Ecos del Abismo»",
+      "slug": "camiseta-ecos-abismo",
+      "regular_price": "24.99",
+      "categories": ["Merchandising", "Ropa"],
+      "type": "simple",
+      "virtual": false
+    },
+    {
+      "name": "Artbook «Mundos de Antigravity»",
+      "slug": "artbook-antigravity",
+      "regular_price": "34.99",
+      "categories": ["Merchandising", "Libros"],
+      "type": "simple",
+      "virtual": false
+    },
+    {
+      "name": "Pack de Pins Coleccionables",
+      "slug": "pack-pins-coleccionables",
+      "regular_price": "14.99",
+      "categories": ["Merchandising", "Coleccionables"],
+      "type": "simple",
+      "virtual": false
+    }
+  ],
+  "widgets": {
+    "sidebar": [],
+    "footer-1": ["links-rapidos"],
+    "footer-2": ["legal"],
+    "footer-3": ["newsletter"]
+  },
+  "plugins_required": [
+    "woocommerce",
+    "contact-form-7",
+    "yoast-seo",
+    "wp-super-cache"
+  ]
+}

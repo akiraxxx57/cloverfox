@@ -1,0 +1,644 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Tienda de videojuegos indie de CLOVERFOX Studios. Explora nuestro catálogo de juegos cortos y únicos por género, precio y etiquetas.">
+    <meta property="og:title" content="Tienda — CLOVERFOX Studios">
+    <meta property="og:description"
+        content="Explora nuestro catálogo de videojuegos indie. Filtra por género, precio y etiquetas.">
+    <meta property="og:type" content="website">
+    <title>Tienda — CLOVERFOX Studios</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <a href="index.html" class="logo" aria-label="CLOVERFOX Studios - Inicio">
+                <div class="logo-icon" aria-hidden="true"><img src="Logo.png" width="56" height="56" alt=""></div>
+                <span>CLOVERFOX</span>
+            </a>
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-main" role="navigation" aria-label="Navegación principal">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="servicios.html" class="nav-link">Servicios</a>
+                <a href="sobre-nosotros.html" class="nav-link">Sobre la empresa</a>
+                <a href="tienda.html" class="nav-link active">Tienda</a>
+                <a href="contacto.html" class="nav-link">Contacto</a>
+                <a href="#" class="nav-fav" data-open-fav aria-label="Ver juegos guardados">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg>
+                    <span class="fav-count" style="display: none;">0</span>
+                </a>
+                <a href="#" class="nav-cart" data-open-cart aria-label="Abrir carrito de compras">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="9" cy="21" r="1" />
+                        <circle cx="20" cy="21" r="1" />
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                    </svg>
+                    <span class="cart-count cart-badge" style="display: none;">0</span>
+                </a>
+                <div class="nav-login">
+                    <a href="login.html" class="btn btn-outline btn-sm" style="position: relative;">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>
+                        Iniciar sesión
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="shop-hero section" aria-labelledby="shop-title">
+            <div class="container" style="text-align: center;">
+                <div class="hero-badge">
+                    <span class="dot" aria-hidden="true"></span>
+                    15 títulos disponibles · Nuevos juegos cada mes
+                </div>
+                <h1 id="shop-title"
+                    style="font-family: var(--font-heading); font-size: var(--fs-h1); font-weight: var(--fw-extrabold); margin-bottom: var(--space-md);">
+                    <span class="highlight">Tienda</span> de Juegos
+                </h1>
+                <p
+                    style="color: var(--color-text-secondary); font-size: 1.1rem; max-width: 500px; margin: 0 auto var(--space-xl);">
+                    Explora nuestro catálogo de experiencias indie. Filtra por género, precio o etiqueta.
+                </p>
+
+                <form class="hero-search" role="search" aria-label="Buscar en la tienda" style="max-width: 500px;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="m21 21-4.3-4.3" />
+                    </svg>
+                    <input type="search" id="shop-search" placeholder="Buscar juegos..."
+                        aria-label="Buscar juegos en la tienda">
+                    <button type="submit" class="btn btn-primary btn-sm">Buscar</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top: 0;">
+            <div class="container">
+                <div class="shop-toolbar">
+                    <div class="shop-filters" role="group" aria-label="Filtrar por género">
+                        <button class="filter-btn active" data-filter="all">Todos</button>
+                        <button class="filter-btn" data-filter="rpg">RPG</button>
+                        <button class="filter-btn" data-filter="terror">Terror</button>
+                        <button class="filter-btn" data-filter="puzzle">Puzzle</button>
+                        <button class="filter-btn" data-filter="aventura">Aventura</button>
+                        <button class="filter-btn" data-filter="supervivencia">Supervivencia</button>
+                    </div>
+                    <div class="shop-sort">
+                        <label for="sort-select" class="sr-only">Ordenar por</label>
+                        <select id="sort-select" aria-label="Ordenar productos">
+                            <option value="popular">Más populares</option>
+                            <option value="price-asc">Precio: menor a mayor</option>
+                            <option value="price-desc">Precio: mayor a menor</option>
+                            <option value="newest">Más recientes</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="games-grid">
+                    <article class="game-card animate-on-scroll" id="shop-game-1" data-id="game-001">
+                        <div class="game-card-image">
+                            <button class="btn-fav" data-product-id="game-001" data-product-name="Ecos del Abismo"
+                                aria-label="Añadir a favoritos">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                </svg>
+                            </button>
+                            <div class="placeholder-img game-1" role="img" aria-label="Carátula de Ecos del Abismo">
+                            </div>
+                            <span class="genre-tag rpg">RPG</span>
+                        </div>
+                        <div class="game-card-body">
+                            <h3 class="game-card-title">Ecos del Abismo</h3>
+                            <p class="game-card-desc">RPG de acción en 2D. Explora ruinas antiguas, lucha contra
+                                criaturas arcanas y descifra los ecos de una civilización olvidada.</p>
+                            <div class="game-card-footer">
+                                <span class="game-price">9,99 €</span>
+                                <div class="game-actions">
+                                    <button class="btn btn-primary btn-sm" data-add-to-cart data-product-id="game-001"
+                                        data-product-name="Ecos del Abismo" data-product-price="9.99"
+                                        data-original-text="Comprar">
+                                        Comprar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="game-card animate-on-scroll" id="shop-game-4" data-id="game-004">
+                        <div class="game-card-image">
+                            <button class="btn-fav" data-product-id="game-004"
+                                data-product-name="Crónicas de Aethelgard" aria-label="Añadir a favoritos">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                </svg>
+                            </button>
+                            <div class="placeholder-img game-4" role="img"
+                                aria-label="Carátula de Crónicas de Aethelgard"></div>
+                            <span class="genre-tag rpg">RPG</span>
+                        </div>
+                        <div class="game-card-body">
+                            <h3 class="game-card-title">Crónicas de Aethelgard</h3>
+                            <p class="game-card-desc">Un RPG táctico por turnos donde tus decisiones forjan el destino
+                                de un reino en decadencia.</p>
+                            <div class="game-card-footer">
+                                <span class="game-price">14,99 €</span>
+                                <div class="game-actions">
+                                    <button class="btn btn-primary btn-sm" data-add-to-cart data-product-id="game-004"
+                                        data-product-name="Crónicas de Aethelgard" data-product-price="14.99"
+                                        data-original-text="Comprar">
+                                        Comprar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="game-card animate-on-scroll" id="shop-game-5" data-id="game-005">
+                        <div class="game-card-image">
+                            <button class="btn-fav" data-product-id="game-005" data-product-name="Sombras del Destino"
+                                aria-label="Añadir a favoritos">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                </svg>
+                            </button>
+                            <div class="placeholder-img game-5" role="img" aria-label="Carátula de Sombras del Destino">
+                            </div>
+                            <span class="genre-tag rpg">RPG</span>
+                        </div>
+                        <div class="game-card-body">
+                            <h3 class="game-card-title">Sombras del Destino</h3>
+                            <p class="game-card-desc">Adéntrate en una narrativa oscura y compleja donde la magia tiene
+                                un precio devastador.</p>
+                            <div class="game-card-footer">
+                                <span class="game-price">12,50 €</span>
+                                <div class="game-actions">
+                                    <button class="btn btn-primary btn-sm" data-add-to-cart data-product-id="game-005"
+                                        data-product-name="Sombras del Destino" data-product-price="12.50"
+                                        data-original-text="Comprar">
+                                        Comprar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="game-card animate-on-scroll" id="shop-game-2" data-id="game-002">
+                        <div class="game-card-image">
+                            <button class="btn-fav" data-product-id="game-002" data-product-name="Latidos en la Niebla"
+                                aria-label="Añadir a favoritos">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                </svg>
+                            </button>
+                            <div class="placeholder-img game-2" role="img"
+                                aria-label="Carátula de Latidos en la Niebla"></div>
+                            <span class="genre-tag terror">Terror</span>
+                        </div>
+                        <div class="game-card-body">
+                            <h3 class="game-card-title">Latidos en la Niebla</h3>
+                            <p class="game-card-desc">Terror psicológico y supervivencia en primera persona en un bosque
+                                donde la niebla cobra vida propia.</p>
+                            <div class="game-card-footer">
+                                <span class="game-price">7,49 €</span>
+                                <div class="game-actions">
+                                    <button class="btn btn-primary btn-sm" data-add-to-cart data-product-id="game-002"
+                                        data-product-name="Latidos en la Niebla" data-product-price="7.49"
+                                        data-original-text="Comprar">
+                                        Comprar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="game-card animate-on-scroll" id="shop-game-6" data-id="game-006">
+                        <div class="game-card-image">
+                            <button class="btn-fav" data-product-id="game-006" data-product-name="El Grito del Silencio"
+                                aria-label="Añadir a favoritos">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                </svg>
+                            </button>
+                            <div class="placeholder-img game-6" role="img"
+                                aria-label="Carátula de El Grito del Silencio"></div>
+                            <span class="genre-tag terror">Terror</span>
+                        </div>
+                        <div class="game-card-body">
+                            <h3 class="game-card-title">El Grito del Silencio</h3>
+                            <p class="game-card-desc">Explora los pasillos de un hospital psiquiátrico abandonado donde
+                                el silencio es tu único aliado.</p>
+                            <div class="game-card-footer">
+                                <span class="game-price">8,99 €</span>
+                                <div class="game-actions">
+                                    <button class="btn btn-primary btn-sm" data-add-to-cart data-product-id="game-006"
+                                        data-product-name="El Grito del Silencio" data-product-price="8.99"
+                                        data-original-text="Comprar">
+                                        Comprar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="game-card animate-on-scroll" id="shop-game-7" data-id="game-007">
+                        <div class="game-card-image">
+                            <button class="btn-fav" data-product-id="game-007"
+                                data-product-name="Pesadilla en el Ártico" aria-label="Añadir a favoritos">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                </svg>
+                            </button>
+                            <div class="placeholder-img game-7" role="img"
+                                aria-label="Carátula de Pesadilla en el Ártico"></div>
+                            <span class="genre-tag terror">Terror</span>
+                        </div>
+                        <div class="game-card-body">
+                            <h3 class="game-card-title">Pesadilla en el Ártico</h3>
+                            <p class="game-card-desc">Sobrevive al frío extremo y a una presencia acechante en una base
+                                científica aislada.</p>
+                            <div class="game-card-footer">
+                                <span class="game-price">10,99 €</span>
+                                <div class="game-actions">
+                                    <button class="btn btn-primary btn-sm" data-add-to-cart data-product-id="game-007"
+                                        data-product-name="Pesadilla en el Ártico" data-product-price="10.99"
+                                        data-original-text="Comprar">
+                                        Comprar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="game-card animate-on-scroll" id="shop-game-3" data-id="game-003">
+                        <div class="game-card-image">
+                            <button class="btn-fav" data-product-id="game-003" data-product-name="Reloj de Arena"
+                                aria-label="Añadir a favoritos">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                </svg>
+                            </button>
+                            <div class="placeholder-img game-3" role="img" aria-label="Carátula de Reloj de Arena">
+                            </div>
+                            <span class="genre-tag puzzle">Puzzle</span>
+                        </div>
+                        <div class="game-card-body">
+                            <h3 class="game-card-title">Reloj de Arena</h3>
+                            <p class="game-card-desc">Manipula engranajes y gravedad en una torre relojera ancestral
+                                para descubrir sus secretos.</p>
+                            <div class="game-card-footer">
+                                <span class="game-price">5,99 €</span>
+                                <div class="game-actions">
+                                    <button class="btn btn-primary btn-sm" data-add-to-cart data-product-id="game-003"
+                                        data-product-name="Reloj de Arena" data-product-price="5.99"
+                                        data-original-text="Comprar">
+                                        Comprar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="game-card animate-on-scroll" id="shop-game-8" data-id="game-008">
+                        <div class="game-card-image">
+                            <button class="btn-fav" data-product-id="game-008" data-product-name="Dimensiones Perdidas"
+                                aria-label="Añadir a favoritos">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                </svg>
+                            </button>
+                            <div class="placeholder-img game-8" role="img"
+                                aria-label="Carátula de Dimensiones Perdidas"></div>
+                            <span class="genre-tag puzzle">Puzzle</span>
+                        </div>
+                        <div class="game-card-body">
+                            <h3 class="game-card-title">Dimensiones Perdidas</h3>
+                            <p class="game-card-desc">Resuelve complejos acertijos alternando entre mundos paralelos con
+                                reglas físicas distintas.</p>
+                            <div class="game-card-footer">
+                                <span class="game-price">6,99 €</span>
+                                <div class="game-actions">
+                                    <button class="btn btn-primary btn-sm" data-add-to-cart data-product-id="game-008"
+                                        data-product-name="Dimensiones Perdidas" data-product-price="6.99"
+                                        data-original-text="Comprar">
+                                        Comprar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="game-card animate-on-scroll" id="shop-game-9" data-id="game-009">
+                        <div class="game-card-image">
+                            <button class="btn-fav" data-product-id="game-009" data-product-name="Mente de Cristal"
+                                aria-label="Añadir a favoritos">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                </svg>
+                            </button>
+                            <div class="placeholder-img game-9" role="img" aria-label="Carátula de Mente de Cristal">
+                            </div>
+                            <span class="genre-tag puzzle">Puzzle</span>
+                        </div>
+                        <div class="game-card-body">
+                            <h3 class="game-card-title">Mente de Cristal</h3>
+                            <p class="game-card-desc">Un viaje minimalista de lógica y reflexión con una banda sonora
+                                ambiental relajante.</p>
+                            <div class="game-card-footer">
+                                <span class="game-price">4,99 €</span>
+                                <div class="game-actions">
+                                    <button class="btn btn-primary btn-sm" data-add-to-cart data-product-id="game-009"
+                                        data-product-name="Mente de Cristal" data-product-price="4.99"
+                                        data-original-text="Comprar">
+                                        Comprar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="game-card animate-on-scroll" id="shop-game-10" data-id="game-010">
+                        <div class="game-card-image">
+                            <button class="btn-fav" data-product-id="game-010"
+                                data-product-name="El Tesoro de los Mares" aria-label="Añadir a favoritos">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                </svg>
+                            </button>
+                            <div class="placeholder-img game-10" role="img"
+                                aria-label="Carátula de El Tesoro de los Mares"></div>
+                            <span class="genre-tag aventura">Aventura</span>
+                        </div>
+                        <div class="game-card-body">
+                            <h3 class="game-card-title">El Tesoro de los Mares</h3>
+                            <p class="game-card-desc">Embárcate en una odisea pirata en busca del mítico tesoro de la
+                                Calavera de Oro.</p>
+                            <div class="game-card-footer">
+                                <span class="game-price">11,99 €</span>
+                                <div class="game-actions">
+                                    <button class="btn btn-primary btn-sm" data-add-to-cart data-product-id="game-010"
+                                        data-product-name="El Tesoro de los Mares" data-product-price="11.99"
+                                        data-original-text="Comprar">
+                                        Comprar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="game-card animate-on-scroll" id="shop-game-11" data-id="game-011">
+                        <div class="game-card-image">
+                            <button class="btn-fav" data-product-id="game-011"
+                                data-product-name="Viaje al Centro de la Tierra" aria-label="Añadir a favoritos">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                </svg>
+                            </button>
+                            <div class="placeholder-img game-11" role="img"
+                                aria-label="Carátula de Viaje al Centro de la Tierra"></div>
+                            <span class="genre-tag aventura">Aventura</span>
+                        </div>
+                        <div class="game-card-body">
+                            <h3 class="game-card-title">Viaje al Centro de la Tierra</h3>
+                            <p class="game-card-desc">Inspirado en la obra de Julio Verne, descubre biomas ocultos bajo
+                                la corteza terrestre.</p>
+                            <div class="game-card-footer">
+                                <span class="game-price">13,49 €</span>
+                                <div class="game-actions">
+                                    <button class="btn btn-primary btn-sm" data-add-to-cart data-product-id="game-011"
+                                        data-product-name="Viaje al Centro de la Tierra" data-product-price="13.49"
+                                        data-original-text="Comprar">
+                                        Comprar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="game-card animate-on-scroll" id="shop-game-12" data-id="game-012">
+                        <div class="game-card-image">
+                            <button class="btn-fav" data-product-id="game-012" data-product-name="Senda de Luces"
+                                aria-label="Añadir a favoritos">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                </svg>
+                            </button>
+                            <div class="placeholder-img game-12" role="img" aria-label="Carátula de Senda de Luces">
+                            </div>
+                            <span class="genre-tag aventura">Aventura</span>
+                        </div>
+                        <div class="game-card-body">
+                            <h3 class="game-card-title">Senda de Luces</h3>
+                            <p class="game-card-desc">Una fábula visual sobre la luz y la oscuridad en un bosque
+                                encantado artesanal.</p>
+                            <div class="game-card-footer">
+                                <span class="game-price">9,00 €</span>
+                                <div class="game-actions">
+                                    <button class="btn btn-primary btn-sm" data-add-to-cart data-product-id="game-012"
+                                        data-product-name="Senda de Luces" data-product-price="9.00"
+                                        data-original-text="Comprar">
+                                        Comprar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="game-card animate-on-scroll" id="shop-game-13" data-id="game-013">
+                        <div class="game-card-image">
+                            <button class="btn-fav" data-product-id="game-013" data-product-name="Refugio Final"
+                                aria-label="Añadir a favoritos">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                </svg>
+                            </button>
+                            <div class="placeholder-img game-13" role="img" aria-label="Carátula de Refugio Final">
+                            </div>
+                            <span class="genre-tag supervivencia">Supervivencia</span>
+                        </div>
+                        <div class="game-card-body">
+                            <h3 class="game-card-title">Refugio Final</h3>
+                            <p class="game-card-desc">Gestiona recursos y personal en un búnker subterráneo tras el fin
+                                del mundo tal como lo conocemos.</p>
+                            <div class="game-card-footer">
+                                <span class="game-price">7,99 €</span>
+                                <div class="game-actions">
+                                    <button class="btn btn-primary btn-sm" data-add-to-cart data-product-id="game-013"
+                                        data-product-name="Refugio Final" data-product-price="7.99"
+                                        data-original-text="Comprar">
+                                        Comprar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="game-card animate-on-scroll" id="shop-game-14" data-id="game-014">
+                        <div class="game-card-image">
+                            <button class="btn-fav" data-product-id="game-014" data-product-name="Náufrago Estelar"
+                                aria-label="Añadir a favoritos">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                </svg>
+                            </button>
+                            <div class="placeholder-img game-14" role="img" aria-label="Carátula de Náufrago Estelar">
+                            </div>
+                            <span class="genre-tag supervivencia">Supervivencia</span>
+                        </div>
+                        <div class="game-card-body">
+                            <h3 class="game-card-title">Náufrago Estelar</h3>
+                            <p class="game-card-desc">Sobrevive en un planeta alienígena hostil recolectando materiales
+                                y construyendo tu base.</p>
+                            <div class="game-card-footer">
+                                <span class="game-price">15,99 €</span>
+                                <div class="game-actions">
+                                    <button class="btn btn-primary btn-sm" data-add-to-cart data-product-id="game-014"
+                                        data-product-name="Náufrago Estelar" data-product-price="15.99"
+                                        data-original-text="Comprar">
+                                        Comprar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="game-card animate-on-scroll" id="shop-game-15" data-id="game-015">
+                        <div class="game-card-image">
+                            <button class="btn-fav" data-product-id="game-015" data-product-name="El Bosque Hambriento"
+                                aria-label="Añadir a favoritos">
+                                <svg viewBox="0 0 24 24" aria-hidden="true">
+                                    <path
+                                        d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
+                                </svg>
+                            </button>
+                            <div class="placeholder-img game-15" role="img"
+                                aria-label="Carátula de El Bosque Hambriento"></div>
+                            <span class="genre-tag supervivencia">Supervivencia</span>
+                        </div>
+                        <div class="game-card-body">
+                            <h3 class="game-card-title">El Bosque Hambriento</h3>
+                            <p class="game-card-desc">Supervivencia táctica pura contra la naturaleza y la escasez en un
+                                bosque boreal implacable.</p>
+                            <div class="game-card-footer">
+                                <span class="game-price">6,50 €</span>
+                                <div class="game-actions">
+                                    <button class="btn btn-primary btn-sm" data-add-to-cart data-product-id="game-015"
+                                        data-product-name="El Bosque Hambriento" data-product-price="6.50"
+                                        data-original-text="Comprar">
+                                        Comprar
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="cta-banner animate-on-scroll">
+                    <h2>🎁 ¿Sabías que puedes jugar gratis?</h2>
+                    <p>Completa un juego al 100% y recibe otro gratis. Descubre cómo funciona nuestro programa de juego
+                        gratuito mensual.</p>
+                    <div class="btn-group">
+                        <a href="index.html#programa" class="btn btn-secondary btn-lg">Cómo funciona</a>
+                        <a href="login.html" class="btn btn-outline btn-lg">Crear cuenta</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon" aria-hidden="true"><img src="Logo.png" width="56" height="56" alt="">
+                        </div>
+                        <span>CLOVERFOX</span>
+                    </a>
+                    <p>Somos un estudio indie apasionado por crear experiencias de juego cortas, únicas y emocionantes.
+                    </p>
+                    <div class="social-links" style="margin-top: var(--space-lg);">
+                        <a href="#" class="social-link" aria-label="Twitter / X">𝕏</a>
+                        <a href="#" class="social-link" aria-label="Discord">💬</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="YouTube">▶</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="tienda.html">Tienda</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Términos de uso</a></li>
+                        <li><a href="#">Política de cookies</a></li>
+                        <li><a href="#">Aviso legal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p
+                        style="color: var(--color-text-secondary); font-size: var(--fs-small); margin-bottom: var(--space-md);">
+                        Recibe novedades y ofertas.</p>
+                    <form class="newsletter-form" aria-label="Suscripción al newsletter">
+                        <input type="email" placeholder="tu@email.com" required aria-label="Email para newsletter">
+                        <button type="submit" class="btn btn-primary btn-sm">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 CLOVERFOX Studios. Todos los derechos reservados.</p>
+                <p>Hecho con ❤️ por un equipo indie de 6 personas.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

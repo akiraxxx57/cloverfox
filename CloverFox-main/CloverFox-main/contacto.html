@@ -1,0 +1,321 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contacta con CLOVERFOX Studios. Formulario de contacto, soporte técnico, colaboraciones y prensa. Estamos aquí para ayudarte.">
+    <meta property="og:title" content="Contacto — CLOVERFOX Studios">
+    <meta property="og:description"
+        content="Contacta con nosotros para soporte, colaboraciones o cualquier consulta sobre nuestros videojuegos indie.">
+    <meta property="og:type" content="website">
+    <title>Contacto — CLOVERFOX Studios</title>
+    <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header class="site-header" role="banner">
+        <div class="container header-inner">
+            <a href="index.html" class="logo" aria-label="CLOVERFOX Studios - Inicio">
+                <div class="logo-icon" aria-hidden="true"><img src="Logo.png" width="56" height="56" alt=""></div>
+                <span>CLOVERFOX</span>
+            </a>
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav-main" role="navigation" aria-label="Navegación principal">
+                <a href="index.html" class="nav-link">Inicio</a>
+                <a href="servicios.html" class="nav-link">Servicios</a>
+                <a href="sobre-nosotros.html" class="nav-link">Sobre la empresa</a>
+                <a href="tienda.html" class="nav-link">Tienda</a>
+                <a href="contacto.html" class="nav-link active">Contacto</a>
+                <a href="#" class="nav-fav" data-open-fav aria-label="Ver juegos guardados">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path
+                            d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78z" />
+                    </svg>
+                    <span class="fav-count" style="display: none;">0</span>
+                </a>
+                <a href="#" class="nav-cart" data-open-cart aria-label="Abrir carrito de compras">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="9" cy="21" r="1" />
+                        <circle cx="20" cy="21" r="1" />
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                    </svg>
+                    <span class="cart-count cart-badge" style="display: none;">0</span>
+                </a>
+                <div class="nav-login">
+                    <a href="login.html" class="btn btn-outline btn-sm">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg>
+                        Iniciar sesión
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="contact-hero section">
+            <div class="container">
+                <div class="hero-badge">
+                    <span class="dot" aria-hidden="true"></span>
+                    Respondemos en menos de 24 horas
+                </div>
+                <h1
+                    style="font-family: var(--font-heading); font-size: var(--fs-h1); font-weight: var(--fw-extrabold); margin-bottom: var(--space-lg);">
+                    <span class="highlight">Contacta</span> con nosotros
+                </h1>
+                <p
+                    style="color: var(--color-text-secondary); font-size: 1.15rem; max-width: 550px; margin: 0 auto; line-height: var(--lh-relaxed);">
+                    ¿Tienes una pregunta, sugerencia o propuesta de colaboración? Nos encantaría escucharte. Rellena el
+                    formulario o contáctanos directamente.
+                </p>
+            </div>
+        </section>
+
+        <section class="section" style="padding-top: 0;" aria-labelledby="form-title">
+            <div class="container">
+                <div class="contact-layout">
+                    <div class="contact-form animate-on-scroll">
+                        <h2 id="form-title"
+                            style="font-family: var(--font-heading); font-size: var(--fs-h3); margin-bottom: var(--space-xl);">
+                            Envíanos un mensaje
+                        </h2>
+                        <form data-ajax aria-label="Formulario de contacto general">
+                            <div class="form-group">
+                                <label for="contact-nombre">Nombre completo *</label>
+                                <input type="text" id="contact-nombre" class="form-control"
+                                    placeholder="Tu nombre y apellidos" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email">Correo electrónico *</label>
+                                <input type="email" id="contact-email" class="form-control"
+                                    placeholder="correo@ejemplo.com" required aria-required="true">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-asunto">Asunto *</label>
+                                <select id="contact-asunto" class="form-control" required aria-required="true">
+                                    <option value="">Selecciona un asunto...</option>
+                                    <option value="soporte">Soporte técnico</option>
+                                    <option value="pedido">Consulta sobre un pedido</option>
+                                    <option value="colaboracion">Propuesta de colaboración</option>
+                                    <option value="prensa">Prensa y medios</option>
+                                    <option value="bug">Reportar un error</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-mensaje">Mensaje *</label>
+                                <textarea id="contact-mensaje" class="form-control" rows="5"
+                                    placeholder="Escribe tu mensaje aquí..." required aria-required="true"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label>Adjuntar archivo (opcional)</label>
+                                <div class="form-file">
+                                    <input type="file" id="contact-archivo" accept=".jpg,.png,.pdf,.zip"
+                                        aria-label="Seleccionar archivo para adjuntar">
+                                    <div class="form-file-label">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                            <polyline points="17 8 12 3 7 8" />
+                                            <line x1="12" y1="3" x2="12" y2="15" />
+                                        </svg>
+                                        Arrastra un archivo o haz clic para seleccionar (JPG, PNG, PDF, ZIP)
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                                📧 Enviar mensaje
+                            </button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info animate-on-scroll">
+                        <div class="contact-info-card">
+                            <div class="icon" aria-hidden="true">📧</div>
+                            <div>
+                                <h4>Correo de soporte</h4>
+                                <p><a href="mailto:CLOVERFOX_SOPORTE@gmail.com"
+                                        style="color: var(--color-primary);">CLOVERFOX_SOPORTE@gmail.com</a></p>
+                                <p style="margin-top: var(--space-xs);">Respondemos en menos de 24 horas laborables.</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="icon" aria-hidden="true">📞</div>
+                            <div>
+                                <h4>Teléfono</h4>
+                                <p><a href="tel:+34912345678" style="color: var(--color-primary);">+34 912 345 678</a>
+                                </p>
+                                <p style="margin-top: var(--space-xs);">Lunes a viernes, 9:00–18:00 (CET).</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="icon" aria-hidden="true">📍</div>
+                            <div>
+                                <h4>Dirección</h4>
+                                <p>Calle de la Innovación, 42<br>28001 Torrevieja, España</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-info-card">
+                            <div class="icon" aria-hidden="true">🌐</div>
+                            <div>
+                                <h4>Redes sociales</h4>
+                                <div class="social-links" style="margin-top: var(--space-sm);">
+                                    <a href="#" class="social-link" aria-label="Twitter / X">𝕏</a>
+                                    <a href="#" class="social-link" aria-label="Discord">💬</a>
+                                    <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                                    <a href="#" class="social-link" aria-label="YouTube">▶</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="map-placeholder" aria-label="Ubicación de la oficina en el mapa">
+                            <div style="text-align: center;">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5" style="margin-bottom: 8px; opacity: 0.5;" aria-hidden="true">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                    <circle cx="12" cy="10" r="3" />
+                                </svg>
+                                <p>Mapa interactivo — Integrar Google Maps o Leaflet</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="prensa" aria-labelledby="prensa-title" style="background: var(--color-bg-card);">
+            <div class="container">
+                <div class="section-header animate-on-scroll">
+                    <h2 id="prensa-title">📰Colaboraciones</h2>
+                    <p>¿Eres un medio de comunicación, creador de contenido o empresa y quieres colaborar con nosotros?
+                        Rellena este formulario y nos pondremos en contacto.</p>
+                </div>
+
+                <div class="press-form animate-on-scroll" style="max-width: 700px; margin: 0 auto;">
+                    <form data-ajax aria-label="Formulario de prensa y colaboraciones">
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg);">
+                            <div class="form-group">
+                                <label for="press-nombre">Nombre / Empresa *</label>
+                                <input type="text" id="press-nombre" class="form-control"
+                                    placeholder="Tu nombre o el de tu empresa" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="press-email">Email *</label>
+                                <input type="email" id="press-email" class="form-control"
+                                    placeholder="correo@empresa.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="press-tipo">Tipo de colaboración</label>
+                            <select id="press-tipo" class="form-control">
+                                <option value="">Selecciona el tipo...</option>
+                                <option value="prensa">Kit de prensa / Review</option>
+                                <option value="influencer">Colaboración con creador de contenido</option>
+                                <option value="evento">Eventos y ferias</option>
+                                <option value="business">Propuesta empresarial</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="press-mensaje">Mensaje *</label>
+                            <textarea id="press-mensaje" class="form-control" rows="4"
+                                placeholder="Cuéntanos más sobre tu propuesta..." required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label>Adjuntar archivo (opcional)</label>
+                            <div class="form-file">
+                                <input type="file" id="press-archivo" accept=".jpg,.png,.pdf,.zip,.doc,.docx"
+                                    aria-label="Seleccionar archivo">
+                                <div class="form-file-label">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                        stroke-width="2" aria-hidden="true">
+                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                        <polyline points="17 8 12 3 7 8" />
+                                        <line x1="12" y1="3" x2="12" y2="15" />
+                                    </svg>
+                                    Arrastra un archivo o haz clic para seleccionar
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                            🤝 Enviar propuesta
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon" aria-hidden="true"><img src="Logo.png" width="56" height="56" alt="">
+                        </div>
+                        <span>CLOVERFOX</span>
+                    </a>
+                    <p>Somos un estudio indie apasionado por crear experiencias de juego cortas, únicas y emocionantes.
+                    </p>
+                    <div class="social-links" style="margin-top: var(--space-lg);">
+                        <a href="#" class="social-link" aria-label="Twitter / X">𝕏</a>
+                        <a href="#" class="social-link" aria-label="Discord">💬</a>
+                        <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                        <a href="#" class="social-link" aria-label="YouTube">▶</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="servicios.html">Servicios</a></li>
+                        <li><a href="sobre-nosotros.html">Sobre nosotros</a></li>
+                        <li><a href="tienda.html">Tienda</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Términos de uso</a></li>
+                        <li><a href="#">Política de cookies</a></li>
+                        <li><a href="#">Aviso legal</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p
+                        style="color: var(--color-text-secondary); font-size: var(--fs-small); margin-bottom: var(--space-md);">
+                        Recibe novedades y ofertas.</p>
+                    <form class="newsletter-form" aria-label="Suscripción al newsletter">
+                        <input type="email" placeholder="tu@email.com" required aria-label="Email para newsletter">
+                        <button type="submit" class="btn btn-primary btn-sm">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 CLOVERFOX Studios. Todos los derechos reservados.</p>
+                <p>Hecho con ❤️ por un equipo indie de 6 personas.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

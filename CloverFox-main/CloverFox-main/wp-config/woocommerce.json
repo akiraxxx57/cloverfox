@@ -1,0 +1,177 @@
+{
+    "taxonomy_genres": [
+        {
+            "slug": "rpg",
+            "name": "RPG",
+            "description": "Juegos de rol con mecánicas de progresión y narrativa."
+        },
+        {
+            "slug": "terror",
+            "name": "Terror",
+            "description": "Juegos de miedo, horror psicológico e inquietud."
+        },
+        {
+            "slug": "puzzle",
+            "name": "Puzzle",
+            "description": "Juegos de lógica, puzles y resolución de problemas."
+        },
+        {
+            "slug": "aventura",
+            "name": "Aventura",
+            "description": "Juegos de exploración, descubrimiento y narrativa."
+        },
+        {
+            "slug": "supervivencia",
+            "name": "Supervivencia",
+            "description": "Juegos donde gestionar recursos es clave para sobrevivir."
+        },
+        {
+            "slug": "plataformas",
+            "name": "Plataformas",
+            "description": "Juegos de saltos, obstáculos y habilidad."
+        },
+        {
+            "slug": "estrategia",
+            "name": "Estrategia",
+            "description": "Juegos que requieren planificación y toma de decisiones."
+        }
+    ],
+    "taxonomy_tags": [
+        {
+            "slug": "indie",
+            "name": "Indie"
+        },
+        {
+            "slug": "pixel-art",
+            "name": "Pixel Art"
+        },
+        {
+            "slug": "hand-drawn",
+            "name": "Hand-drawn"
+        },
+        {
+            "slug": "steampunk",
+            "name": "Steampunk"
+        },
+        {
+            "slug": "atmosferico",
+            "name": "Atmosférico"
+        },
+        {
+            "slug": "un-jugador",
+            "name": "Un jugador"
+        },
+        {
+            "slug": "corto",
+            "name": "Corto (< 6 horas)"
+        },
+        {
+            "slug": "narrativo",
+            "name": "Narrativo"
+        },
+        {
+            "slug": "primera-persona",
+            "name": "Primera persona"
+        },
+        {
+            "slug": "2d",
+            "name": "2D"
+        },
+        {
+            "slug": "3d",
+            "name": "3D"
+        }
+    ],
+    "product_attributes": [
+        {
+            "name": "Plataforma",
+            "slug": "plataforma",
+            "type": "select",
+            "terms": [
+                "PC",
+                "Mac",
+                "Linux",
+                "Nintendo Switch",
+                "PlayStation",
+                "Xbox",
+                "iOS",
+                "Android"
+            ]
+        },
+        {
+            "name": "Duración estimada",
+            "slug": "duracion",
+            "type": "select",
+            "terms": [
+                "1-2 horas",
+                "2-4 horas",
+                "4-6 horas",
+                "6-10 horas"
+            ]
+        },
+        {
+            "name": "Idiomas",
+            "slug": "idiomas",
+            "type": "select",
+            "terms": [
+                "Español",
+                "Inglés",
+                "Francés",
+                "Alemán",
+                "Portugués",
+                "Italiano"
+            ]
+        },
+        {
+            "name": "Género",
+            "slug": "genero",
+            "type": "select",
+            "terms": [
+                "RPG",
+                "Terror",
+                "Puzzle",
+                "Aventura",
+                "Supervivencia",
+                "Plataformas",
+                "Estrategia"
+            ]
+        }
+    ],
+    "woocommerce_settings": {
+        "currency": "EUR",
+        "currency_position": "right_space",
+        "thousand_separator": ".",
+        "decimal_separator": ",",
+        "number_of_decimals": 2,
+        "enable_reviews": true,
+        "enable_guest_checkout": true,
+        "enable_ajax_add_to_cart": true,
+        "products_per_page": 12,
+        "download_method": "force",
+        "digital_downloads": true,
+        "tax_settings": {
+            "enable_tax": true,
+            "tax_based_on": "shop_base_address",
+            "tax_rate": 21,
+            "prices_include_tax": true
+        }
+    },
+    "search_settings": {
+        "enable_product_search": true,
+        "search_by": [
+            "title",
+            "description",
+            "tags",
+            "genres",
+            "attributes"
+        ],
+        "filters": [
+            "genre",
+            "price_range",
+            "platform",
+            "duration"
+        ],
+        "autocomplete": true,
+        "results_per_page": 12
+    }
+}
